@@ -52,9 +52,9 @@ export function DataTable<TData, TValue>({
         <div className="flex gap-x-4">
           <Input
             placeholder="Search name..."
-            value={(table.getColumn("phone")?.getFilterValue() as string) ?? ""}
+            value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
-              table.getColumn("phone")?.setFilterValue(event.target.value)
+              table.getColumn("name")?.setFilterValue(event.target.value)
             }
             className="max-w-sm"
           />
@@ -70,9 +70,9 @@ export function DataTable<TData, TValue>({
         <div className="flex gap-x-4">
           <Input
             placeholder="Search email..."
-            value={(table.getColumn("address")?.getFilterValue() as string) ?? ""}
+            value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
-              table.getColumn("address")?.setFilterValue(event.target.value)
+              table.getColumn("email")?.setFilterValue(event.target.value)
             }
             className="max-w-sm"
           />
